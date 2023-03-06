@@ -1,18 +1,15 @@
-class Meta {
-    age: number;
-    gender: boolean;
+interface NumList {
+    a: number;
+    b: number;
+    c: number;
 }
 
-class Post extends Meta {
-    title: string;
-    content: string;
-
-    constructor() {
-        super();
-
-    }
+const numberList: NumList = {
+    a: 1,
+    b: 2,
+    c: 3,
 }
 
-const user: Post = new Post();
-
-user.content = "콘텐츠";
+for (const number of Object.keys(numberList)) {
+    console.log(numberList[number]);
+}
