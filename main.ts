@@ -1,15 +1,6 @@
-interface NumList {
-    a: number;
-    b: number;
-    c: number;
-}
+type Arr = number[];
 
-const numberList: NumList = {
-    a: 1,
-    b: 2,
-    c: 3,
-}
+const arr: Arr = [1, 2];
+const arr2: [number, number] = arr;
 
-for (const number of Object.keys(numberList)) {
-    console.log(numberList[number]);
-}
+
